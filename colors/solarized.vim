@@ -251,7 +251,8 @@ elseif (g:solarized_degrade == 1)
     let s:base00      = "#72a2ad"
     let s:base0       = "#808080"
     let s:base1       = "#95a7aa"
-    let s:base2       = "#d7d7af"
+    " let s:base2       = "#d7d7af"
+    let s:base2       = "#ffffd8"
     let s:base3       = "#ba9e9e"
     let s:yellow      = "#e5ba33"
     let s:orange      = "#fd8f61"
@@ -424,7 +425,7 @@ exe "let s:sp_cyan      = ' guisp=".s:cyan   ."'"
 " note that link syntax to avoid duplicate configuration doesn't work with the
 " exe compiled formats
 
-exe "hi! Normal"         .s:fmt_none   .s:fg_base3  .s:bg_none
+exe "hi! Normal"         .s:fmt_none   .s:fg_base2  .s:bg_none
 
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base00   .s:bg_none
 "       *Comment         any comment
