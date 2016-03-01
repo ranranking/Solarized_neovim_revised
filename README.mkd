@@ -1,11 +1,15 @@
 #Revised version of solarized for neovim 
-This is a version of https://github.com/altercation/vim-colors-solarized
-modified to always use true color (24 bit rgb). This means it will work with
-neovim with the following:
 
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    set background=light " or dark
-    colorscheme solarized
+This is a fork of https://github.com/frankier/neovim-colors-solarized-truecolor-only
+modified for personal use.
+
+In neovim:
+
+```vim
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set background=light " or dark
+colorscheme solarized
+```
 
 Normally this wouldn't work with neovim (as of writing) since `gui_running` is always false during initialisation.
 
