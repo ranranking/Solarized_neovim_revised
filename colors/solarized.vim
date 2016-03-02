@@ -4,7 +4,7 @@
 "           (see this url for latest release & screenshots)
 " License:  OSI approved MIT license (see end of this file)
 " Created:  In the middle of the night
-" Modified: 2011 May 05
+" Modified: 2016 Mar 01 by Zhongqi Miao
 "
 " Usage "{{{
 "
@@ -552,6 +552,18 @@ exe "hi! Cursor"         .s:fmt_none   .s:fg_base03 .s:bg_base0
 hi! link lCursor Cursor
 exe "hi! MatchParen"     .s:fmt_bold   .s:fg_red    .s:bg_base01
 
+"}}}
+" fortran syntax highlighting "{{{
+" ---------------------------------------------------------------------
+" autocmd BufNewFile,BufRead *.f90 syn match fortranType   "[{}()\[\]]"
+" autocmd BufNewFile,BufRead *.f90 syn match fortranIntrinsic	":"
+" autocmd BufNewFile,BufRead *.f90 syn match fortranConstant           "[%,]"
+hi! link fortranConditional  	Function
+hi! link fortranRepeat       	SpecialChar
+hi! link fortranBoolean      	SpecialChar
+hi! link fortranReadWrite	    SpecialChar
+hi! link fortranIO	        	SpecialChar
+hi! link fortranConstant	    Underlined 
 "}}}
 " vim syntax highlighting "{{{
 " ---------------------------------------------------------------------

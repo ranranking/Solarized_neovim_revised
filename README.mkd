@@ -3,6 +3,12 @@
 This is a fork of https://github.com/frankier/neovim-colors-solarized-truecolor-only
 modified for personal use.
 
+Main change:
+
+- Degraded by default
+- Degraded color modified for better looking
+- Enhanced Fortran syntax
+
 In neovim:
 
 ```vim
