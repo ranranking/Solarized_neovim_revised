@@ -203,6 +203,15 @@ call s:SetOption("hitrail",0)
 call s:SetOption("menu",1)
 
 "}}}
+" Terminal model color modification "{{{
+" ---------------------------------------------------------------------
+
+let g:terminal_color_1  = "#f36f6c"
+let g:terminal_color_2  = "#c6d945"
+let g:terminal_color_4  = "#55aae6"
+let g:terminal_color_5  = "#ff77c1"
+
+"}}}
 " Colorscheme initialization "{{{
 " ---------------------------------------------------------------------
 hi clear
